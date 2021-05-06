@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<style>
+
+   .main_title {
+
+       color: #ff0000;
+
+       font-size: 36px;
+
+    }
+
+    .title {
+
+        color: #000000;
+
+        font-size: 18px;
+
+    }
+
+ 
+
+    .body {
+
+	    color: #006600;
+
+        font-size: 20px;
+
+    }
+
+</style>
+
+<html lang="ja">
+
+	<head>
+
+		<meta charset="UTF-JIS">
+
+		<title>インターバル撮影 Main Page</title>
+
+	</head>
+
+	<body bgcolor="#7FFF00">
+
+	<header>
+
+	<b  class="main_title"> インターバル撮影 Main Page </b>
+
+	<br>
+
+	<br>
+
+	<b> HTML version:       2020.08.24  </b>
+
+	</header>
+
+   　<hr>
+
+	<td align="right"><b class="body">【設定】</b></td>
+
+	<br>
+
+	<td>
+
+	
+
+	<tr>
+
+    <td align="right"><b class="title"> カメラ回転 角度</b></td>
+
+    <td><input type="number" name="camera_angle" min="0" max="360"></td>
+
+	<br>
+
+    </tr>
+
+	
+
+	<tr>
+
+    <td align="right"><b class="title"> 撮影間隔(秒)</b></td>
+
+    <td><input type="number" name="timer_interval" min="1" max="60000"></td>
+
+	<br>
+
+    </tr>
+
+	
+
+	<tr>
+
+   　<hr>
+
+	<br>
+
+	<td align="right"><b class="body">【操作】</b></td>
+
+	<br>
+
+	</tr>
+
+	<td>
+
+      <input type="button" value="開始" style="width:150px;height:100px;font-weight:bold;font-size:30px">
+
+      <input type="button" value="終了" style="width:150px;height:100px;font-weight:bold;font-size:30px">
+
+      <input type="button" value="一時停止" style="width:150px;height:100px;font-weight:bold;font-size:30px">
+
+	  <input type="button" value="リセット" style="width:150px;height:100px;font-weight:bold;font-size:30px">
+
+    </td>
+
+	<br>
+
+	<tr>
+
+	<br>	
+
+	<td align="right"><b>進捗</b></td>
+
+	<progress id="current_progress" max="100" value="0"> 0% </progress>
+
+	<br>
+
+    </tr>
+
+	<br>
+
+	<tr>
+
+   　<hr>
+
+	<td align="right"><b class="body">【情報】</b></td>
+
+	<br>
+
+	</tr>
+
+	
+
+	<tr>
+
+    <td align="right"><b> Webアプリバージョン</b></td>
+
+    <td><input type="text" name="Web_rev"></td>
+
+	<br>
+
+    </tr>
+
+	<tr>
+
+    <td align="right"><b> システムソフトウェアバージョン</b></td>
+
+    <td><input type="text" name="software_rev"></td>
+
+	<br>
+
+    </tr>
+
+	
+
+	<tr>
+
+    <td align="right"><b> 装置状態</b></td>
+
+    <td><input type="text" name="status"></td>
+
+	<br>
+
+    </tr>
+
+	
+
+   　<hr>	
+
+    <small>© 2020 エムジエク勉強会 </small>
+
+	</body>
+
+</html>
+
